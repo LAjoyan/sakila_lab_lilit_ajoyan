@@ -68,27 +68,23 @@ This project focuses on:
 - Generate bar charts and pie charts from refined tables and save as images for reporting or dashboard use
 
 
-
-
-
 ---
 
 ## Project Structure
 sakila_lab_lilit_ajoyan/
-│
-├── .venv/ # Virtual environment
-├── data/ # Database and images
-│ ├── sqlite-sakila.db # Original SQLite Sakila database
-│ ├── sakila.duckdb # DuckDB database (generated)
-│ └── SQLite3 Sakila Sample Database ERD.png
-│
-├── load_sakila_sqlite_duckdb.py # Python script: load SQLite → DuckDB using DLT
-├── sakila_lab_analysis.ipynb # Jupyter Notebook: EDA and SQL queries
-├── README.md # Project overview, instructions, workflow
-├── pyproject.toml # Python project configuration
-├── uv.lock # Dependency lock file
+├── .venv/                     # Virtual environment
+├── data/                      # Database and images
+│   ├── sqlite-sakila.db       # Original SQLite Sakila database
+│   ├── sakila.duckdb          # DuckDB database (generated)
+│   └── SQLite3-Sakila-Sample-Database-ERD.png    # ERD image
+├── load_sakila_sqlite_duckdb.py  # Python script: load SQLite → DuckDB using DLT
+├── sakila_lab_analysis.ipynb      # Jupyter Notebook: EDA and SQL queries
+├── README.md                      # Project overview, instructions, workflow
+├── pyproject.toml                  # Python project configuration
+├── uv.lock                         # Dependency lock file
 ├── .gitignore
-└── .python-version # Python version file
+└── .python-version                 # Python version file
+
 
 ## Workflow Overview
 - Initialize project and set up the virtual environment.
