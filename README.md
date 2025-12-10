@@ -22,7 +22,10 @@ The purpose of this lab is to explore and analyze the Sakila database using Pyth
 - Convert SQLite Sakila database into DuckDB
 - Register database tables in pandas
 - Run SQL queries and analyze results
-- Build visualizations and interactive pages with Evidence
+- Create refined tables for analysis (e.g., customer_rental_duration)
+- Build visualizations and saved charts as images
+
+
 
 ---
 
@@ -41,6 +44,8 @@ This project focuses on:
 ERD of the Sakila database:
 
 ![Sakila ERD](data/SQLite3 Sakila Sample Database ERD.png)
+![Top 10 Fastest Returning Customers](data/customer_rental_duration_top10.png)
+
 
 ---
 
@@ -61,6 +66,9 @@ ERD of the Sakila database:
 - uv add "dlt[duckdb]"
 - Load the SQLite Sakila database into DuckDB: uv run python load_sakila_sqlite_duckdb.py
 - Open sakila_lab_analysis.ipynb in Jupyter Notebook, connect to DuckDB, and register tables for analysis.
+- Perform EDA in Jupyter Notebook, including custom questions such as customer rental durations
+- Generate bar charts from refined tables and save as images for reporting or dashboard use
+
 
 
 
@@ -91,3 +99,9 @@ sakila_lab_lilit_ajoyan/
 - Load and register database tables in pandas.
 - Explore the database using SQL queries and pandas for analysis.
 - Generate visualizations and build an interactive dashboard with Evidence.
+
+
+## Refined Schema
+
+Refined tables are created from the staging schema to provide clean, analysis-ready data.  
+These tables are used for visualizations and dashboards.
