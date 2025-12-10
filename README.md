@@ -65,7 +65,8 @@ This project focuses on:
 - Load the SQLite Sakila database into DuckDB: uv run python load_sakila_sqlite_duckdb.py
 - Open sakila_lab_analysis.ipynb in Jupyter Notebook, connect to DuckDB, and register tables for analysis.
 - Perform EDA in Jupyter Notebook, including custom questions such as customer rental durations
-- Generate bar charts and pie charts from refined tables and save as images for reporting or dashboard use
+- Generate visualizations (bar charts, pie charts) for completed questions and save as images
+
 
 
 ---
@@ -102,3 +103,16 @@ This project focuses on:
 
 Refined tables are created from the staging schema to provide clean, analysis-ready data.  
 These tables are used for visualizations and dashboards.
+
+### Current Refined Tables
+- `customer_rental_duration` — average rental duration and total rentals per customer
+- `rating_total_days` — total rental days aggregated by film rating
+- `top_customers_total_spend` — top 5 customers by total spend
+
+## Task Progress
+- Task 1: ✅ Completed
+- Task 2: ⚠️ Partial 
+  - Pending: 
+    - Revenue per film category (bar chart)
+- Task 3: ⬜ Pending
+- Task 4: ⬜ Pending
