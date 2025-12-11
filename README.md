@@ -132,5 +132,5 @@ npm install
 npm run sources
 npm run dev -- --host 0.0.0.0
 ```
-For more detailed instructions on using Evidence, see [EVIDENCE_TEMPLATE_README.md](EVIDENCE_TEMPLATE_README.md).
+For more detailed instructions on using Evidence, see [EVIDENCE_TEMPLATE_README.md](dashboard/EVIDENCE_TEMPLATE_README.md).
 
