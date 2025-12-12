@@ -1,26 +1,27 @@
-# Welcome to the Sakila Dashboard
+# Sakila Dashboard
 
-This dashboard presents insights from the Sakila movie rental database.  
-You can explore revenue by film category, see top-spending customers, and analyze rental durations.  
+Welcome to the **Sakila Movie Rental Dashboard**.
 
-Use the dropdowns and charts below to interact with the data.
+This dashboard provides a clear and structured overview of key insights from the Sakila database, including:
 
-<Details title='How to edit this page'>
-  This page can be found at `/pages/index.md`.  
-  You can edit this markdown file and save it to see changes live in your browser.
-</Details>
+* **Revenue by Movie Category**
+* **Customer Rental Behaviour**
+* **Top Customers and Top-Rented Films**
+* **Overall Patterns in Rental Duration and Activity**
 
-## Film Revenue by Category
+Use the navigation menu to explore each section.
 
-```sql rentaly
-SELECT 
-title,
-length
-from sakila.rental;
-```
+## What This Dashboard Shows
 
+The Sakila database is a fictional movie rental dataset commonly used for data analysis practice. In this dashboard, you will find:
 
-```sql rental_summary
-SELECT rating, total_days_rented
-from sakila.category;
-```
+* Which movie categories generate the **most revenue**
+* Which customers are the **most active** and **most profitable**
+* What films are rented the most
+* How rental durations differ between customers and categories
+
+## About This Project
+
+This project was built using **Evidence.dev**, **DuckDB**, and **Python**. SQL and Python queries were used to transform and analyse the dataset before visualising the results.
+
+Continue to the next pages to see detailed insights, charts, and tables.
