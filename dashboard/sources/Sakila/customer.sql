@@ -11,4 +11,5 @@ GROUP BY
 ORDER BY
     total_spend DESC,
     customer_name ASC
-    LIMIT 8;
+LIMIT
+    8;
