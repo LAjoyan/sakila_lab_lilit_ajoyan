@@ -7,17 +7,17 @@ This dashboard provides a clear and structured overview of key insights from the
 * **Revenue by Movie Category**
 * **Customer Rental Behaviour**
 * **Top Customers and Top-Rented Films**
-* **Overall Patterns in Rental Duration and Activity**
+* **Patterns in Rental Duration and Activity**
 
 Use the navigation menu to explore each section.
 
 ## What This Dashboard Shows
 
-The Sakila database is a fictional movie rental dataset commonly used for data analysis practice. In this dashboard, you will find:
+The Sakila database is a fictional movie rental dataset commonly used for data analysis practice. In this dashboard, you will discover:
 
-* Which movie categories generate the **most revenue**
+* Which movie categories generate the **highest revenue**
 * Which customers are the **most active** and **most profitable**
-* What films are rented the most
+* Which films are rented the most
 * How rental durations differ between customers and categories
 
 ## About This Project

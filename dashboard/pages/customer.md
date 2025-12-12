@@ -10,8 +10,6 @@ This page shows insights into customer behavior in the Sakila database, includin
 FROM sakila.customer;
 
 ```
-
-
 ---
 
 ###  A Barchart  
@@ -27,7 +25,8 @@ FROM sakila.customer;
 
 ## Insights
 
-- The chart highlights the customers contributing the most revenue.  
-- Customers with a high number of rentals are frequent renters.  
-- Comparing total spending vs. rental count can identify valuable but infrequent customers.  
-- This information can help plan loyalty programs or targeted promotions.
+- The bar chart highlights the customers who generate the highest revenue.
+- High total spending usually correlates with frequent rentals.
+- Customers with high spending but low rental count may rent expensive titles — valuable to target for premium offers.
+- Customers with many rentals but low spending may be ideal for loyalty rewards.
+- These insights support identifying key customer groups for marketing or retention strategies.

@@ -1,32 +1,15 @@
-# Film Revenue by Category
+# Film Revenue Dashboard
+ 
+## Film Categories Overview
 
-This page shows total revenue for each film category in the Sakila database.  
-Use the chart and table below to explore which categories generate the most revenue.
-
----
-
-## Revenue Table
-
-```sql Revenue
-FROM sakila.category;
-
-```
-
-<BarChart
-    data={Revenue}
-    title="Total Revenue by Film Category"
-    x=category_name
-    y=total_revenue
-    
-/>
-
----
 ```sql Film
 FROM sakila.category_film;
 
 ```
 
-## Analyzing films by categories
+### Analyzing films by categories
+
+## Select a category
 
 <Dropdown data={Film} name=category_name value=category_name
 title="Select a category" >
@@ -42,9 +25,10 @@ ORDER BY title;
 ```
 
 ---
+
 ## Insights
 
-- Categories with the highest revenue appear at the top of the chart.
-- This helps identify which film genres are the most profitable.
-- Categories with lower revenue may indicate niche audiences or lower rental frequency.
-- Use these insights to guide decisions on inventory, promotions, or marketing strategies.
+- The dropdown lets users instantly list all films in a chosen category.
+- Useful for analyzing which genres have the most or fewest films.
+- Helps compare film availability across categories (e.g., Action vs. Family).
+- Can support further analysis like revenue per category or popularity trends.

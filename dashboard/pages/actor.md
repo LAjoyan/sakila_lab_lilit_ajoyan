@@ -22,3 +22,9 @@ GROUP BY actor_name
 ORDER BY actor_name;
 ```
 
+## Insights
+
+- Selecting a film displays all actors who appeared in that movie, allowing quick exploration of the cast.
+- This simplifies understanding of which actors frequently collaborate by appearing together across multiple films.
+- Some films feature large ensemble casts, while others include only a few actors.
+- This page is useful for analyzing casting trends, identifying popular actors, and understanding actor distribution across films.
