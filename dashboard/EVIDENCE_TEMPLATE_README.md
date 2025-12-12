@@ -1,4 +1,13 @@
-# Evidence Template Project
+## Sakila Movie Rental Dashboard
+
+This project analyzes the Sakila database using Python, DuckDB, and Evidence.dev.
+It includes interactive dashboards for:
+
+- Revenue by film category and month
+- Top customers and rental activity
+- Film categories and associated movies
+- Actors and the films they appeared in
+
 
 ## Using Codespaces
 
@@ -47,4 +56,16 @@ Check out the docs for [alternative install methods](https://docs.evidence.dev/g
 - [Slack Community](https://slack.evidence.dev/)
 - [Evidence Home Page](https://www.evidence.dev)
 
-
+## Project Structure
+```
+├── pages/                                   # Evidence markdown pages
+│   ├── index.md                             # Home page
+│   ├── revenue.md                           # Revenue dashboard
+│   ├── customer.md                          # Customer dashboard
+│   ├── Category.md                           # Film categories dropdown
+│   └── actor.md                             # Actors and film appearances
+├── sources/Sakila/                          # SQL queries for dashboards
+│   ├── revenue.sql
+│   ├── month_revenue.sql
+│   └── category_film.sql
+```

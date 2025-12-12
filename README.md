@@ -18,12 +18,18 @@ The purpose of this lab is to explore and analyze the Sakila database using Pyth
 
 ---
 
-## Highlights (will be updated as the lab progresses)
+## Highlights 
 - Convert SQLite Sakila database into DuckDB
 - Register database tables in pandas
 - Run SQL queries and analyze results
 - Create refined tables for analysis (e.g., customer_rental_duration)
 - Build visualizations (bar charts, pie charts) and saved charts as images
+- Built interactive dashboards with Evidence:
+  - **Home page:** Overview of Sakila database
+  - **Revenue page:** Total revenue by category and monthly trends
+  - **Customer page:** Top customers and rental behavior
+  - **Category page:** Dropdowns to explore films by category
+  - **Actors page:** Film cast exploration via dropdowns
 
 
 
@@ -74,18 +80,29 @@ This project focuses on:
 ## Project Structure
 
 ```
-├── .venv/                                   # Virtual environment
-├── data/                                     # Database and images
+├── pages/                                   # Evidence markdown pages
+│   ├── index.md                             # Home page
+│   ├── revenue.md                           # Revenue dashboard
+│   ├── customer.md                          # Customer dashboard
+│   ├── Category.md                           # Film categories dropdown
+│   └── actor.md                             # Actors and film appearances
+├── sources/Sakila/                          # SQL queries for dashboards
+│   ├── revenue.sql
+│   ├── month_revenue.sql
+│   └── category_film.sql
+├── .venv/                                   # Python virtual environment
+├── data/                                    # Database files and images
 │   ├── sqlite-sakila.db                      # Original SQLite Sakila database
 │   ├── sakila.duckdb                         # DuckDB database (generated)
 │   └── SQLite3-Sakila-Sample-Database-ERD.png # ERD image
-├── load_sakila_sqlite_duckdb.py              # Load SQLite → DuckDB using DLT
-├── sakila_lab_analysis.ipynb                 # Analysis notebook
-├── README.md                                 # Project documentation
-├── pyproject.toml                             # Project dependencies
-├── uv.lock                                    # Lock file
-├── .gitignore
-└── .python-version                            # Python version
+├── load_sakila_sqlite_duckdb.py             # Python script to convert SQLite → DuckDB
+├── sakila_lab_analysis.ipynb                # Jupyter Notebook for analysis
+├── README.md                                # Project documentation
+├── pyproject.toml                            # Project dependencies
+├── uv.lock                                   # Evidence lock file
+├── .gitignore                                # Files/folders to ignore in Git
+└── .python-version                           # Python version used in the project
+
 ```
 
 ---
@@ -119,7 +136,7 @@ These tables are used for visualizations and dashboards.
 ## Task Progress
 - Task 1: ✅ Completed
 - Task 2: ✅ Completed
-- Task 3 (Bonus)  BI Report ⬜ Pending
+- Task 3 :✅ Completed
 - Task 4: ⬜ Pending
 
 ---
@@ -130,7 +147,15 @@ To start the Evidence dashboard, run:
 ```bash
 npm install
 npm run sources
-npm run dev -- --host 0.0.0.0
+npm run dev 
 ```
 For more detailed instructions on using Evidence, see [EVIDENCE_TEMPLATE_README.md](dashboard/EVIDENCE_TEMPLATE_README.md).
 
+
+
+## Key Findings from the Dashboard
+- Action, Sports, and Sci-Fi films generate the highest revenue.
+- Top 10 customers contribute a significant portion of total revenue.
+- Some film categories have a larger number of titles but lower revenue per film.
+- Actors such as X and Y appear in multiple popular films.
+- Seasonal revenue trends indicate peak rentals in summer months.
