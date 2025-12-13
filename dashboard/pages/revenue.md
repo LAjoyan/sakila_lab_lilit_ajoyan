@@ -41,7 +41,8 @@ ORDER BY pay_date;
 />
 
 ## Insights
-- Category Revenue
+
+## Category Revenue
 - Categories with the highest revenue stand out clearly in the bar chart.
 - High-revenue categories indicate genres with strong customer demand.
 - Lower-revenue categories may represent niche genres or less frequently rented films.

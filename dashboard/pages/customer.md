@@ -16,7 +16,7 @@ FROM sakila.customer;
 
 <BarChart
     data={Customers}
-    title="Top 10 Customers by Total Spending"
+    title="Top 8 Customers by Total Spending"
     x=customer_name
     y=total_spend
     swapXY= true
