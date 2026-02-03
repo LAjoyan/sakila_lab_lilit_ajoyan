@@ -212,3 +212,6 @@ __marimo__/
 
 #sqlite
 *.db
+
+node_modules/
+dashboard/node_modules/

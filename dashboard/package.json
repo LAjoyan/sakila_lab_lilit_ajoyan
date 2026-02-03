@@ -8,8 +8,7 @@
     "test": "evidence build",
     "sources": "evidence sources",
     "sources:strict": "evidence sources --strict",
-    "preview": "evidence preview",
-    "install": "npm ci --no-audit --no-fund"
+    "preview": "evidence preview"
 
   },
   "engines": {
