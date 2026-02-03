@@ -1,0 +1,5 @@
+{
+  "installCommand": "cd dashboard && npm ci --no-audit --no-fund",
+  "buildCommand": "cd dashboard && npm run build",
+  "outputDirectory": "dashboard/build"
+}
