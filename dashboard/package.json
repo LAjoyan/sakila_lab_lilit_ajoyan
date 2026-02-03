@@ -16,7 +16,6 @@
   },
   "type": "module",
   "dependencies": {
-    "@evidence-dev/bigquery": "^1.0.0",
     "@evidence-dev/core-components": "^5.3.1",
     "@evidence-dev/csv": "^1.0.14",
     "@evidence-dev/duckdb": "^1.0.13",
