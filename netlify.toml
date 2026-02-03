@@ -1,4 +1,11 @@
 [build]
   base = "dashboard"
-  command = "npm run build"
+  command = "npm run sources && npm run build"
   publish = "build"
+
+[[headers]]
+  for = "/*"
+  [headers.values]
+    Cross-Origin-Opener-Policy = "same-origin"
+    Cross-Origin-Embedder-Policy = "require-corp"
+    Cross-Origin-Resource-Policy = "cross-origin"
