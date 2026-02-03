@@ -14,7 +14,7 @@ FROM sakila.revenue;
 
 <BarChart
     data={Revenue}
-    title="Total Revenue by Film Category"
+    title='Total Revenue by Film Category'
     x=category_name
     y=total_revenue
     
@@ -32,11 +32,11 @@ GROUP BY pay_date
 ORDER BY pay_date;
 ```
 
-<BarChart
+<LineChart
     data={Month}
-    title="Total Revenue by month"
-    x=pay_date
-    y=total_revenue
+    title='Total Revenue by month'
+    x='pay_date'
+    y='total_revenue'
     
 />
 
