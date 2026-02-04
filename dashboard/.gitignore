@@ -10,3 +10,7 @@ static/data
 .evidence/meta
 .evidence
 .vercel
+
+# allow prebuilt Evidence output
+!dashboard/build/
+!dashboard/build/**

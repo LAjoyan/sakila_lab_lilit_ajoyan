@@ -219,3 +219,7 @@ dashboard/node_modules/
 # allow the prebuilt DB for Netlify/Evidence
 !dashboard/sakila.duckdb
 !data/sakila.duckdb
+
+# allow prebuilt Evidence output
+!dashboard/build/
+!dashboard/build/**
