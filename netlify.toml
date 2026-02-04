@@ -1,7 +1,3 @@
 [build]
-  base = "dashboard"
-  publish = "build"
-  command = "npm ci && npm run build"
-
-[build.environment]
-  NODE_VERSION = "24"
+  publish = "dashboard/build"
+  command = "echo 'Using prebuilt site'"
