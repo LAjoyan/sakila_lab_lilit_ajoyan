@@ -215,3 +215,7 @@ __marimo__/
 
 node_modules/
 dashboard/node_modules/
+
+# allow the prebuilt DB for Netlify/Evidence
+!dashboard/sakila.duckdb
+!data/sakila.duckdb
