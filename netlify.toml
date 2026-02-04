@@ -1,12 +1,11 @@
 [build]
-  base = "dashboard"
-  command = "npm run build"
-  publish = "build"
+  publish = "dashboard/build"
+  command = "python3 -m pip install --upgrade pip && python3 -m pip install \"dlt[duckdb]\" && python3 load_sakila_sqlite_duckdb.py && cp -f data/sakila.duckdb dashboard/sakila.duckdb && cd dashboard && npm ci && npm run sources && npm run build"
 
 [build.environment]
   NODE_VERSION = "24"
 
-[[headers]]
+[headers]
   for = "/*"
   [headers.values]
     Cross-Origin-Opener-Policy = "same-origin"
