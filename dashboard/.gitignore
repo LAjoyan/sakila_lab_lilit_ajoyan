@@ -12,5 +12,5 @@ static/data
 .vercel
 
 # allow prebuilt Evidence output
-!dashboard/build/
-!dashboard/build/**
+!build/
+!build/**

@@ -1,0 +1,1 @@
+{"queries":[{"id":"Customers","compiledQueryString":"FROM sakila.customer;","inputQueryString":"FROM sakila.customer;","compiled":false,"inline":true}]}
