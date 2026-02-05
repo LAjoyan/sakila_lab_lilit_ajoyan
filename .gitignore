@@ -220,6 +220,7 @@ dashboard/node_modules/
 !dashboard/sakila.duckdb
 !data/sakila.duckdb
 
-# allow prebuilt Evidence output
-!dashboard/build/
-!dashboard/build/**
+build
+node_modules
+.next
+dist
