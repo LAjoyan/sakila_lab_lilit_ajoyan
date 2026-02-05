@@ -9,7 +9,7 @@ FROM sakila.actor;
 
 ## Analyzing actors
 
-<Dropdown data={Actors} name="film" value=title
+<Dropdown data={Actors} name="film" value="title"
 title="Select a film" >
 </Dropdown>
 

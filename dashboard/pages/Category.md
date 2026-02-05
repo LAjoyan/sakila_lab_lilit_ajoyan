@@ -9,20 +9,27 @@ FROM sakila.category_film;
 
 ## Select a category
 
-<Dropdown data={Film} name=category_name value=category_name
-title="Select a category" >
+<Dropdown data={Film} name='category_name' value='category_name'
+title='Select a category' >
 </Dropdown>
 
 
+<!-- -- ```sql Film_Categories
+-- SELECT
+--     title
+-- FROM sakila.category_film
+-- WHERE category_name =  '${inputs.category_name}'
+-- ORDER BY title;
+-- ```
+ -->
+---
 ```sql Film_Categories
-SELECT
-    title
+SELECT title
 FROM sakila.category_film
-WHERE category_name = '${inputs.category_name.value}'
+WHERE TRIM(LOWER(category_name)) = TRIM(LOWER('${inputs.category_name.value}'
+))
 ORDER BY title;
 ```
-
----
 
 ## Insights
 
