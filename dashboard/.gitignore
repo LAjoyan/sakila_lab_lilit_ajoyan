@@ -11,6 +11,7 @@ static/data
 .evidence
 .vercel
 
-# allow prebuilt Evidence output
-!build/
-!build/**
+build
+node_modules
+.next
+dist
