@@ -11,20 +11,23 @@
     "preview": "evidence preview"
   },
   "engines": {
-  "node": "20.x",
-  "npm": ">=7.0.0"
-},
+    "node": "20.x",
+    "npm": ">=7.0.0"
+  },
   "type": "module",
   "dependencies": {
-    "@evidence-dev/core-components": "^5.3.1",
+    "@evidence-dev/core-components": "^5.4.2",
     "@evidence-dev/csv": "^1.0.14",
-    "@evidence-dev/duckdb": "^1.0.13",
-    "@evidence-dev/evidence": "^40.1.5"
+    "@evidence-dev/duckdb": "^2.0.1",
+    "@evidence-dev/evidence": "^40.1.8"
   },
   "overrides": {
     "jsonwebtoken": "9.0.0",
     "trim@<0.0.3": ">0.0.3",
     "sqlite3": "5.1.5",
     "axios": "^1.7.4"
+  },
+  "devDependencies": {
+    "vite": "^5.4.21"
   }
 }
