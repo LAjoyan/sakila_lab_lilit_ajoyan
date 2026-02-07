@@ -2,4 +2,4 @@
 name: Sakila
 type: duckdb
 options:
-  filename: ../data/sakila.duckdb
+  filename: ../../../data/sakila.duckdb
