@@ -5,12 +5,9 @@ description = "Sakila lab project: load SQLite into DuckDB, run SQL queries, ana
 readme = "README.md"
 requires-python = ">=3.11"
 dependencies = [
-  "dlt>=1.18.2",
-    "duckdb>=1.4.1",
-    "ipykernel>=7.1.0",
-    "marimo[sql]>=0.17.2",
-    "matplotlib>=3.10.7",
-    "numpy>=2.3.4",
-    "pandas>=2.3.3",
-    "uvicorn>=0.38.0",
+ "dlt[duckdb,parquet,sql-database]>=1.19.1",
+  "duckdb>=1.4.3",
+  "ipykernel>=6.0.0",
+  "matplotlib>=3.8.0",
+  "pandas>=2.0.0"
 ]

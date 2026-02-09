@@ -9,15 +9,15 @@ FROM sakila.actor;
 
 ## Analyzing actors
 
-<Dropdown data={Actors} name="film" value="title"
-title="Select a film" />
-
+<Dropdown data={Actors} name=film value=title
+title="Select a film" noDefault={true}>
+</Dropdown>
 
 ```sql Actor
 SELECT
     actor_name
 FROM sakila.actor
-WHERE title = '${inputs.film}'
+WHERE title = '${inputs.film.value}'
 GROUP BY actor_name
 ORDER BY actor_name;
 ```
