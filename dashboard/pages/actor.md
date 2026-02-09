@@ -4,6 +4,7 @@ This page shows insights into actors in the Sakila database, including which mov
 Users can explore the filmography of actors and see details about their roles.
 
 ```sql Actors
+SELECT DISTINCT title
 FROM sakila.actor;
 ```
 
