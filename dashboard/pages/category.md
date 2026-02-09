@@ -24,6 +24,7 @@ WHERE TRIM(LOWER(category_name)) = TRIM(LOWER('${inputs.category_name.value}'))
 ORDER BY title;
 ```
 <DataTable data={Film} />
+
 ## Insights
 
 - The dropdown lets users instantly list all films in a chosen category.
