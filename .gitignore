@@ -81,4 +81,3 @@ build/
 .ruff_cache/
 .cursorignore
 .cursorindexingignore
-.dockerignore
