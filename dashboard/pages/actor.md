@@ -8,10 +8,10 @@ SELECT DISTINCT title
 FROM sakila.actor;
 ```
 
-## Analyzing actors
+## Select a film to see all actors who appeared in it
 
 <Dropdown data={Actors} name=film value=title
-title="Select a film" noDefault={true}>
+title="Select a film to view cast" noDefault={true}>
 </Dropdown>
 
 ```sql Actor
@@ -23,6 +23,8 @@ GROUP BY actor_name
 ORDER BY actor_name;
 ```
 <DataTable data={Actor} />
+
+This table shows the complete cast for the selected film.
 
 ## Insights
 

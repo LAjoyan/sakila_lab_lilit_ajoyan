@@ -3,8 +3,6 @@
 This page shows total revenue for each film category in the Sakila database.  
 Use the chart and table below to explore which categories generate the most revenue.
 
----
-
 ## Revenue Table
 
 ```sql Revenue
@@ -19,7 +17,6 @@ FROM sakila.revenue;
     y=total_revenue
     
 />
----
 
 ## Monthly Revenue Trend
 
@@ -43,13 +40,17 @@ ORDER BY pay_date;
 ## Insights
 
 ## Category Revenue
-- Categories with the highest revenue stand out clearly in the bar chart.
-- High-revenue categories indicate genres with strong customer demand.
-- Lower-revenue categories may represent niche genres or less frequently rented films.
-- These insights help guide decisions on stock allocation, marketing, and promotional focus.
+- A small number of categories generate a disproportionate share of revenue.
+- High-revenue categories often reflect strong customer demand and repeat rentals.
+- Lower-revenue categories may represent niche interest or lower inventory turnover.
 
 ## Monthly Revenue Trend
-- The month-by-month chart reveals how revenue changes over time.
-- Peaks in the chart may represent seasonal demand or promotional periods.
-- Months with unusually low revenue may indicate system gaps, limited data coverage, or lower rental activity.
-- This trend view helps identify seasonality, growth, and anomalies in customer spending behavior.
+- Revenue fluctuates over time, suggesting seasonality or campaign effects.
+- Peaks may reflect high-demand periods or increased availability of popular titles.
+- Low months can indicate reduced activity, limited data coverage, or operational factors.
+
+## Key Takeaways
+
+- The highest-revenue categories should be prioritized for promotion and inventory planning.
+- Monthly trends help identify peak demand periods and potential seasonality.
+- Combining category + time trends supports smarter pricing and marketing decisions.

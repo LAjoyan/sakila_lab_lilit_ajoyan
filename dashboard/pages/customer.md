@@ -10,7 +10,8 @@ This page shows insights into customer behavior in the Sakila database, includin
 FROM sakila.customer;
 
 ```
----
+
+This chart highlights the customers who contribute most to total revenue.
 
 ##  A Barchart  
 

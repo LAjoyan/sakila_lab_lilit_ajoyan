@@ -1,4 +1,8 @@
-# Film Categories Overview
+# Explore how films are distributed across categories
+
+This section allows you to browse all the films by genre
+and compare category sizes.
+
 
 ```sql Film
 FROM sakila.category_film;
@@ -24,6 +28,8 @@ WHERE TRIM(LOWER(category_name)) = TRIM(LOWER('${inputs.category_name.value}'))
 ORDER BY title;
 ```
 <DataTable data={Film_Categories} />
+
+Showing all films that belong to the selected category.
 
 ## Insights
 
