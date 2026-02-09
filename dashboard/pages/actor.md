@@ -22,6 +22,7 @@ WHERE title = '${inputs.film.value}'
 GROUP BY actor_name
 ORDER BY actor_name;
 ```
+<DataTable data={Actor} />
 
 ## Insights
 
