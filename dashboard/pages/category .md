@@ -1,0 +1,39 @@
+# Explore how films are distributed across categories
+
+This section allows you to browse all the films by genre
+and compare category sizes.
+
+
+```sql Film
+FROM sakila.category_film;
+
+```
+
+### Analyzing films by categories
+
+## Select a category
+
+<Dropdown
+  data={Film}
+  name=category_name
+  value=category_name
+  title="Select a category" noDefault={true} >
+</Dropdown>
+
+
+```sql Film_Categories
+SELECT title
+FROM sakila.category_film
+WHERE TRIM(LOWER(category_name)) = TRIM(LOWER('${inputs.category_name.value}'))
+ORDER BY title;
+```
+<DataTable data={Film_Categories} />
+
+Showing all films that belong to the selected category.
+
+## Insights
+
+- The dropdown lets users instantly list all films in a chosen category.
+- Useful for analyzing which genres have the most or fewest films.
+- Helps compare film availability across categories (e.g., Action vs. Family).
+- Can support further analysis like revenue per category or popularity trends.
