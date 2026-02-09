@@ -3,7 +3,7 @@ name = "sakila-lab-lilit-ajoyan"
 version = "0.1.0"
 description = "Sakila lab project: load SQLite into DuckDB, run SQL queries, analyze and visualize data"
 readme = "README.md"
-requires-python = ">=3.10"
+requires-python = ">=3.11"
 dependencies = [
   "dlt[duckdb,parquet,sql-database]>=1.19.1",
   "duckdb>=1.4.3",
