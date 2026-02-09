@@ -11,7 +11,7 @@ FROM sakila.category_film;
 
 <Dropdown
   data={Film}
-  name=category
+  name=category_name
   value=category_name
   title="Select a category" noDefault={true} >
 </Dropdown>
@@ -20,7 +20,7 @@ FROM sakila.category_film;
 ```sql Film_Categories
 SELECT title
 FROM sakila.category_film
-WHERE TRIM(LOWER(category_name)) = TRIM(LOWER('${inputs.category.value}'))
+WHERE TRIM(LOWER(category_name)) = TRIM(LOWER('${inputs.category_name.value}'))
 ORDER BY title;
 ```
 <DataTable data={Film} />
