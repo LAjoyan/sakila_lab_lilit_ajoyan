@@ -23,7 +23,7 @@ FROM sakila.category_film
 WHERE TRIM(LOWER(category_name)) = TRIM(LOWER('${inputs.category.value}'))
 ORDER BY title;
 ```
-
+<DataTable data={Film} />
 ## Insights
 
 - The dropdown lets users instantly list all films in a chosen category.
