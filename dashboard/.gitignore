@@ -10,8 +10,5 @@ static/data
 .evidence/meta
 .evidence
 .vercel
-
-build
-node_modules
 .next
 dist
