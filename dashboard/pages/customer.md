@@ -28,6 +28,6 @@ This chart highlights the customers who contribute most to total revenue.
 
 - The bar chart highlights the customers who generate the highest revenue.
 - High total spending usually correlates with frequent rentals.
-- Customers with high spending but low rental count may rent expensive titles — valuable to target for premium offers.
+- Customers with high spending but low rental count may rent expensive titles valuable to target for premium offers.
 - Customers with many rentals but low spending may be ideal for loyalty rewards.
 - These insights support identifying key customer groups for marketing or retention strategies.

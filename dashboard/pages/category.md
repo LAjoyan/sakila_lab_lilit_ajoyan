@@ -29,8 +29,6 @@ ORDER BY title;
 ```
 <DataTable data={Film_Categories} />
 
-Showing all films that belong to the selected category.
-
 ## Insights
 
 - The dropdown lets users instantly list all films in a chosen category.

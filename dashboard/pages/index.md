@@ -38,7 +38,6 @@ This project was built using **Evidence.dev**, **DuckDB**, and **Python**. SQL a
 
 ## Database Structure
 
-static/images/sakila_erd.png
 <div style="text-align: center;">
   <img src="/images/sakila_erd.png" width="700" />
 </div>
@@ -67,8 +66,15 @@ used in this dashboard.
 
 ## About the Author
 
-This dashboard was created by Lilit as part of a data analytics project
-focusing on SQL, Python, and interactive visualization.
+This dashboard was created by Lilit Ajoyan, an aspiring **MLOps engineer** with a strong interest in data analytics, SQL, and Python-driven insights, as part of a data analytics project
+focusing on interactive visualization.
+
+## Project Repository
+
+You can view the full source code for this project on GitHub:
+
+👉 [Sakila Dashboard Repository](https://github.com/LAjoyan/sakila_lab_lilit_ajoyan)
+
 
 Dashboard built using Evidence.dev, DuckDB, and the Sakila sample database.
 
