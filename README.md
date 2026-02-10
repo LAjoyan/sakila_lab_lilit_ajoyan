@@ -92,15 +92,15 @@ uv add ipykernel "dlt[sql_database]" "dlt[parquet]" pandas matplotlib
 │   │     ├── customer.md                         
 │   │     ├── category.md                          
 │   │     └── actor.md                             
-├── sources/Sakila/    
-│   ├── actor.sql
-│   ├── customer.sql
-│   ├── connection.yaml
-│   ├── revenue.sql
-│   ├── month_revenue.sql
-│   └── category_film.sql
-├── static/images
-│            └── sakila_erd.png                                 
+├   └── sources/Sakila/    
+│   │             ├── actor.sql
+│   │             ├── customer.sql
+│   │             ├── connection.yaml
+│   │             ├── revenue.sql
+│   │             ├── month_revenue.sql
+│   │             └── category_film.sql
+│   └──static/images
+│              └── sakila_erd.png                                 
 ├── data/                                    
 │   ├── sqlite-sakila.db                      
 │   ├── sakila.duckdb                         
