@@ -42,8 +42,6 @@ This project focuses on:
 - Understanding customer behavior, film categories, rentals, revenue, etc.  
 - Creating a dashboard summarizing key findings  
 
-*More details will be added during development.*
-
 ---
 
 ## Screenshots / Images
@@ -63,17 +61,24 @@ This project focuses on:
 ---
 
 ## How to Run
-- Place the database in your project folder
-- Activate the virtual environment : uv init
-- Install dependencies: uv add ipykernel "dlt[sql_database]" "dlt[parquet]" pandas matplotlib
-- "load_sakila_sqlite_duckdb.py": Python script to load Sakila SQLite database into DuckDB using DLT
+- Place the Sakila SQLite database in your project folder
+- Initialize virtual environment : 
+```bash
+uv init
+```
+- Install dependencies:
+```bash
+uv add ipykernel "dlt[sql_database]" "dlt[parquet]" pandas matplotlib
+```
+ - "load_sakila_sqlite_duckdb.py": Python script to load Sakila SQLite database into DuckDB using DLT
 - uv add "dlt[duckdb]"
-- Load the SQLite Sakila database into DuckDB: uv run python load_sakila_sqlite_duckdb.py
+- Load SQLite into DuckDB:
+```bash
+ uv run python load_sakila_sqlite_duckdb.py
+ ```
 - Open sakila_lab_analysis.ipynb in Jupyter Notebook, connect to DuckDB, and register tables for analysis.
-- Perform EDA in Jupyter Notebook, including custom questions such as customer rental durations
-- Generate visualizations (bar charts, pie charts) for completed questions and save as images
-
-
+- Perform EDA in Jupyter Notebook, including custom questions such as customer rental durations.
+- Generate visualizations (bar charts, pie charts) .
 
 ---
 
@@ -84,7 +89,7 @@ This project focuses on:
 │   ├── index.md                             # Home page
 │   ├── revenue.md                           # Revenue dashboard
 │   ├── customer.md                          # Customer dashboard
-│   ├── Category.md                           # Film categories dropdown
+│   ├── category.md                           # Film categories dropdown
 │   └── actor.md                             # Actors and film appearances
 ├── sources/Sakila/                          # SQL queries for dashboards
 │   ├── revenue.sql
@@ -149,7 +154,7 @@ For more detailed instructions on using Evidence, see [EVIDENCE_TEMPLATE_README.
 - Action, Sports, and Sci-Fi films generate the highest revenue.
 - Top 10 customers contribute a significant portion of total revenue.
 - Some film categories have a larger number of titles but lower revenue per film.
-- Actors such as X and Y appear in multiple popular films.
+- Several actors appear frequently in high-revenue films.
 - Seasonal revenue trends indicate peak rentals in summer months.
 
 
