@@ -84,29 +84,34 @@ uv add ipykernel "dlt[sql_database]" "dlt[parquet]" pandas matplotlib
 
 ## Project Structure
 
-```
-├── pages/                                   # Evidence markdown pages
-│   ├── index.md                             # Home page
-│   ├── revenue.md                           # Revenue dashboard
-│   ├── customer.md                          # Customer dashboard
-│   ├── category.md                           # Film categories dropdown
-│   └── actor.md                             # Actors and film appearances
-├── sources/Sakila/                          # SQL queries for dashboards
+```text
+├── dashboard/ 
+│   ├── pages/                                   
+│   │     ├── index.md                             
+│   │     ├── revenue.md                           
+│   │     ├── customer.md                         
+│   │     ├── category.md                          
+│   │     └── actor.md                             
+├── sources/Sakila/    
+│   ├── actor.sql
+│   ├── customer.sql
+│   ├── connection.yaml
 │   ├── revenue.sql
 │   ├── month_revenue.sql
 │   └── category_film.sql
-├── .venv/                                   # Python virtual environment
-├── data/                                    # Database files and images
-│   ├── sqlite-sakila.db                      # Original SQLite Sakila database
-│   ├── sakila.duckdb                         # DuckDB database (generated)
-│   └── SQLite3-Sakila-Sample-Database-ERD.png # ERD image
-├── load_sakila_sqlite_duckdb.py             # Python script to convert SQLite → DuckDB
-├── sakila_lab_analysis.ipynb                # Jupyter Notebook for analysis
-├── README.md                                # Project documentation
-├── pyproject.toml                            # Project dependencies
-├── uv.lock                                   # Evidence lock file
-├── .gitignore                                # Files/folders to ignore in Git
-└── .python-version                           # Python version used in the project
+├── static/images
+│            └── sakila_erd.png                                 
+├── data/                                    
+│   ├── sqlite-sakila.db                      
+│   ├── sakila.duckdb                         
+│   └── SQLite3-Sakila-Sample-Database-ERD.png 
+├── load_sakila_sqlite_duckdb.py             
+├── sakila_lab_analysis.ipynb                
+├── README.md                                
+├── pyproject.toml                            
+├── uv.lock                                 
+├── .gitignore                                
+└── .python-version                           
 
 ```
 
