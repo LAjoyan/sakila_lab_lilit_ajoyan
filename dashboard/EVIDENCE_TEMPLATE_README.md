@@ -40,10 +40,9 @@ Steps:
 
 ```bash
 npm run build
-
-4. Set output directory:
-
-build/
-
-5. Deploy
 ```
+4. Set output directory:
+```bash
+build/
+```
+5. Deploy
