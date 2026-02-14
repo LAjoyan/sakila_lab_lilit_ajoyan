@@ -27,6 +27,7 @@ FROM sakila.category_film
 WHERE TRIM(LOWER(category_name)) = TRIM(LOWER('${inputs.category_name.value}'))
 ORDER BY title;
 ```
+<!-- Only needed for deployment -->
 <DataTable data={Film_Categories} />
 
 ## Insights

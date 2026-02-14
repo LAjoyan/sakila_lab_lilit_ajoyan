@@ -22,7 +22,8 @@ WHERE title = '${inputs.film.value}'
 GROUP BY actor_name
 ORDER BY actor_name;
 ```
-<DataTable data={Actor} />
+<!-- Only needed for deployment -->
+<DataTable data={Actor} />  
 
 This table shows the complete cast for the selected film.
 
